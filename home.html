@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Penguins Fan Page</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styles.css" type="text/css">
+<style type="text/css">
+#current{
+	background:#CCB776;
+}
+</style>
+<script type="text/javascript">
+var x = "player1";
+function changeRoster(){
+if (x == 'player3'){document.images[4].src = 'player1.jpg';
+x = 'player2'}
+if (x == 'player2'){document.images[4].src = 'player2.jpg';
+x = 'player3'}
+if (x == 'player1'){document.images[4].src = 'player3.jpg';
+x = 'player2'}
+else {document.images[4].src = 'player2.jpg';
+x = 'player1'}
+}
+</script>
+</head>
+<body onload="var begin=setInterval('changeRoster()',5000)">
+<div class="wrapper">
+<table>
+
+	<tr>
+		<th colspan="3" class="title" id="#home"><img src="penguin1.jpg" alt="logo" width="150" height="112" />
+		Pittsburgh Penguins Hockey
+		<img src="penguin2.jpg" alt="logo" width="150" height="112" /></th>
+	</tr>
+	
+	<tr>
+		
+		<td class="links" id="current"><a href="home.html"><img src="linkhome.jpg" alt="home link" height="101" width="160" /></a></td>
+
+		<td rowspan="4" class="content">
+		<h1>Welcome to the Pittsburgh Penguins Fan Site</h1>
+<hr />
+		<p><em>Use the links on the left to navigate our page and the links at the bottom to visit the official pages of the NHL and Pittsburgh Penguins.</em></p>
+		<h2>Don't forget to visit the kids page to sign up for the upcoming hockey camp! Deadline is December 20th.</h2>
+<hr />
+		<img src="300games.jpg" alt="packed hockey arena" height="125" width="200" style="float:left;margin:0 5px 0 0;" />
+		<h3><a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"
+		onclick="window.open('http://penguins.nhl.com/club/news.htm?id=693346')">
+		Penguins hit a historic 300 consecutive sold out games!!</a></h3>
+		<p>On Wednesday November 27th the Pens face the Maple Leafs and celebrate the milestone.<br>
+		Visit the Official NHL homepage to get your game tickets and keep the streak going!</p>
+		
+		<img src="malkin.jpg" alt="Malkin skating" height="125" width="200" style="float:left;margin:0 5px 0 0;" />
+		<h3><a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"
+		onclick="window.open('http://penguins.nhl.com/club/news.htm?id=693018')">
+		Evegni Malkin is named the "First Star" of the week!</a></h3>
+		<p>Malkin had 7 assists and 8 points last week to help move the Penguins back into first place in the Metropolitan Division. Malkin also currently leads all NHL players in assists and points for the month of November.</p>
+		
+		<img src="sled.jpg" alt="hockey sled participants" height="125" width="200" style="float:left;margin:0 5px 0 0;" />
+		<h3><a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"
+		onclick="window.open('http://penguins.nhl.com/club/news.htm?id=692211')">
+		Pittsburgh Hosts USA Hockey Sled Classic</a></h3>
+		<p>On Sunday November 24th the USA Hockey Sled Classic was held in the CONSOL Arena. The event gives physically disadvantaged individuals a chance to compete on the ice against other teams across the nation.</p>
+		
+		</td>
+		
+
+
+		<td rowspan="4" class="player"><img src="player1.jpg" alt="player roster" width="250" height="550" /></td>
+		
+	</tr>
+
+	<tr>
+
+		<td class="links"><a href="games.html"><img src="linkgames.jpg" alt="games link" height="101" width="160" /></a></td>
+	</tr>
+	<tr>
+		<td class="links"><a href="kids.html"><img src="linkkids.jpg" alt="kids link" height="101" width="160" /></a></td>
+	</tr>
+	<tr>
+		<td class="links"><a href="history.html"><img src="linkhistory.jpg" alt="history link" height="101" width="160" /></a></td>
+
+	</tr>
+
+	<tr>
+
+		<td colspan="3" class="credits">|&nbsp;&nbsp;<span style="color:green">e</span>MAD Design&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://penguins.nhl.com/">Official Pittsburgh Penguins Website</a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nhl.com/">National Hockey League Website</a>&nbsp;|&nbsp;Page created November 25,2013&nbsp;&nbsp;|
+		&nbsp;&nbsp;<a href="emailto:fanclub@pitspenguins.com">Contact Us</a>&nbsp;&nbsp;|
+		</td>
+
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>

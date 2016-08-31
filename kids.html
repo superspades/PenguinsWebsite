@@ -1,0 +1,144 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Penguins Fan Page</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styles.css" type="text/css">
+<style type="text/css">
+#current{
+	background:#CCB776;
+}
+</style>
+<script type="text/javascript">
+var x = "player1";
+function changeRoster(){
+if (x == 'player3'){document.images[3].src = 'player1.jpg';
+x = 'player2'}
+if (x == 'player2'){document.images[3].src = 'player2.jpg';
+x = 'player3'}
+if (x == 'player1'){document.images[3].src = 'player3.jpg';
+x = 'player2'}
+else {document.images[3].src = 'player2.jpg';
+x = 'player1'}
+}
+function numberCheck(fieldValue){
+	var numCheck = isNaN(fieldValue);
+	if (numCheck == true){
+		window.alert("You must enter a numeric value");
+		return false;
+	}
+		else return true;
+}	
+function confirmSubmit(){
+	if (document.forms[0].pname.value == ""){
+	window.alert("Please Enter Your Name");
+	return false;}
+	if (document.forms[0].kname.value == ""){
+	window.alert("Please Enter Your Kids Name");
+	return false;}
+	else if (document.forms[0].email.value == ""){
+	window.alert("Please Enter Your Email");
+	return false;}
+	else if (document.forms[0].phone.value == ""){
+	window.alert("Please Enter Your Phone Number")
+	return false;}
+	else if (document.forms[0].addy.value == ""){
+	window.alert("Please Enter Your Street Address");
+	return false;}
+	else if (document.forms[0].city.value == ""){
+	window.alert("Please Enter Your City");
+	return false;}
+	else if (document.forms[0].state.value == ""){
+	window.alert("Please Enter Your State");
+	return false;}
+	else if (document.forms[0].zip.value == ""){
+	window.alert("Please Enter Your Zip");
+	return false;}
+	else if (document.forms[0].age.selectedIndex == 0){
+	window.alert("Please Select An Age Level")
+	return false;}
+}
+</script>
+</head>
+<body onload="var begin=setInterval('changeRoster()',10000)">
+<div class="wrapper">
+<table>
+
+	<tr>
+		<th colspan="3" class="title" id="#home"><img src="penguin1.jpg" alt="logo" width="150" height="112" />
+		Pittsburgh Penguins Hockey
+		<img src="penguin2.jpg" alt="logo" width="150" height="112" /></th>
+	</tr>
+
+	<tr>
+		
+		<td class="links"><a href="home.html"><img src="linkhome.jpg" alt="home link" height="101" width="160" /></a></td>
+
+<td rowspan="4" class="content"><h1>Jr. Penguin Hockey Camp Sign Up</h1>
+<hr />
+	<h2>Camp is Saturday January 11th 7am - 6pm at the Civic Arena in Pittsburgh</h2>
+		<p>Please submit the form below so we know how many kids we can expect at the camp. Fees are $100 per child payable by cash or check the morning of camp.
+		All kids must have their own skates and hockey stick. Penguins Players will be teaching the kids the basics of hockey and setting up mock games. Players
+		will be available to sign autographs for camp participants after the game. Please submit the form by December 20th so flyers with more information can be mailed.</p>
+<form action="FormProcessor.html" method="get" enctype="application/x-www-form-urlencoded"
+onsubmit="return confirmSubmit();">
+<fieldset>
+	<legend>Sign-Up Info</legend>
+<p>
+	<label for="pname">Parent's Name</label><br><input type="text" name="pname" id="pname" size="25" /><br>
+	<label for="kname">Kid's Name</label><br><input type="text" name="kname" id="kname" size="25" /><br>
+	<label for="email">Email</label><br><input type="text" name="email" id="email" size="25" /><br />
+	<label for="phone">Phone</label><br><input type="text" name="phone" id="phone" size="25" onblur="return numberCheck(this.value);" /><br>
+	<label for="addy">Street Address</label><br><input type="text" name="addy" id="addy" size="25" /><br>
+	<label for="city">City</label><br><input type="text" name="city" id="city" size="25" /><br>
+	<label for="state">State</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="zip">Zip</label><br>
+	<input type="text" name="state" id="state" size="5" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="zip" id="zip" size="5" onblur="return numberCheck(this.value);" />
+</p>
+<p>
+	<label for="age">Age Level</label><select name="age" id="age">
+	<option value="none" selected="selected">Select Age Group</option>
+	<option value="one">Age 5 - 8</option>
+	<option value="two">Age 9 - 12</option>
+	<option value="three">Age 13 - 17</option>
+	</select>
+</p>
+</fieldset>
+			<p><input type="submit" /></p>
+
+</form>
+
+		
+		</td>
+
+
+		<td rowspan="4" class="player"><img src="player1.jpg" alt="player roster" width="250" height="550" /></td>
+		
+	</tr>
+
+	<tr>
+
+		<td class="links"><a href="games.html"><img src="linkgames.jpg" alt="games link" height="101" width="160" /></a></td>
+	</tr>
+	<tr>
+		<td class="links" id="current"><a href="kids.html"><img src="linkkids.jpg" alt="kids link" height="101" width="160" /></a></td>
+	</tr>
+	<tr>
+		<td class="links"><a href="history.html"><img src="linkhistory.jpg" alt="history link" height="101" width="160" /></a></td>
+
+	</tr>
+
+	<tr>
+
+		<td colspan="3" class="credits">|&nbsp;&nbsp;<span style="color:green">e</span>MAD Design&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://penguins.nhl.com/">Official Pittsburgh Penguins Website</a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nhl.com/">National Hockey League Website</a>&nbsp;|&nbsp;Page created November 25,2013&nbsp;&nbsp;|
+		&nbsp;&nbsp;<a href="emailto:fanclub@pitspenguins.com">Contact Us</a>&nbsp;&nbsp;|
+		</td>
+
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>

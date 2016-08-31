@@ -1,0 +1,65 @@
+﻿.wrapper{
+	width:90%;
+	height:90%;
+	margin:0px auto;
+	background:#000000;	
+}
+.title{
+	background-color:transparent;
+	border:15px solid;
+	border-color:#CCB776;
+}
+.links{
+	background-color:white;
+	border-left:15px solid #CCB776;
+	border-right:10px solid #CCB776;
+	width:10%;
+}
+.content{
+	background-color:white;
+	width:75%;
+}
+.player{
+	background-color:white;
+	border-right:15px solid #CCB776;
+	width:10%;
+	
+}
+.credits{
+	background-color:#CCB776;
+	border-left:15px solid #CCB776;
+	border-right:15px solid #CCB776;
+	height:10%;
+	font-size:x-small;
+	text-align:center;
+}
+body{
+	background-color:#000000;
+}
+h1{
+	text-align:center;
+}
+table{
+	width:100%;
+	border-collapse:collapse;
+}
+td{
+
+}
+th{
+	color:#CCB776;
+	font-weight:bold;
+	font-size:75px;
+	text-align:center;	
+}
+form{
+	background-color:#CCB776;
+}
+hr{
+	background-color:#CCB776;
+	height: 3px;
+	width:90%;
+}
+em{
+	font-size:smaller;
+}

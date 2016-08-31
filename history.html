@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Penguins Fan Page</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styles.css" type="text/css">
+<style type="text/css">
+#current{
+	background:#CCB776;
+}
+#txtArea {
+	text-align:left;
+	width:950px;
+	height:200px;
+	background-color:#CCB776;
+	color:black;
+}
+</style>
+<script type="text/javascript">
+var x = "player1";
+function changeRoster(){
+if (x == 'player3'){document.images[8].src = 'player1.jpg';
+x = 'player2'}
+if (x == 'player2'){document.images[8].src = 'player2.jpg';
+x = 'player3'}
+if (x == 'player1'){document.images[8].src = 'player3.jpg';
+x = 'player2'}
+else {document.images[8].src = 'player2.jpg';
+x = 'player1'}
+}
+function showfounding(txtArea){
+	document.getElementById('description').innerHTML = 
+	"On February 8, 1966 the National Hockey League gave an expanstion team to Pittsburg known as the Pittsburgh Hornets. After paying the Detroit Red Wings an indemnification fee for the name, a contest was held and the teams nickname 'Penguins' (because the arena looked like an igloo) became the offical team name. The logo for the Penguins shows a penguin in front of a triangle which symbolizes the 'Golden Triangle' of downtown Pittsburgh.";
+}
+function showcolors(txtArea){
+	document.getElementById('description').innerHTML = 
+	"In January of 1980 the Penguins switched from blue and white uniforms to black and gold in honor of the other Pittsburgh teams the Pirates and the Steelers. The change was also meant to honor the Pittsburgh flag and bring luck to the Penguins since the other professional teams wearing these colors had both won national championships. The Bruins cotested the color change since their team colors were also black and gold. The Penguins argued that the various Pittsburgh teams had always worn black and gold as their traditional colors. The NHL agreed with the Penguins and the change was made permenant.";
+}
+function showmario(txtArea){
+	document.getElementById('description').innerHTML = 
+	"In 1984 Coach Lou Angotti made the decision to weaken the team in order to gain a first round draft pick. The desired pick was one of the most sought after players of the time Mario Lemieux. Almost immediatly Lemiex made his presence known, scoring on the first shot of his first NHL game. And in 1989 Lemieux lead the Penguins the playoffs, becoming the first player in history to score a goal in all five game situations (even, shorthanded, penalty, power play, and empty net) in a single game. After leading the Penguins to the Stanley Cup in 1991 and 1992 and the Presidents' Trophy in 1993. Lemieux was inducted into the Hockey Hall of Fame in 1998. In 2009 Malkin would bring home the Conn Smythe Trophy for his dominant perfomance in they playoff games leading to the Penguins third Stanley Cup win.";
+}
+function showevgeni(txtArea){
+	document.getElementById('description').innerHTML = 
+	"October 18, 2006 marked the arrival of Evgeni Malkin to the Penguins. Malkin went on to set the modern NHL record with a goal scored in each of his first six games. Malkin also held a streak for scoring in sixteen straight games with fourteen wins, the second longest scoring streak in club history. In 2007 Malkin was awarded the Calder Memorial Trophy for being rookie of the year";
+}
+function showconsol(txtArea){
+	document.getElementById('description').innerHTML = 
+	"As early as the 1970s the Penguins were dealing with rumors and threats of relocation spurred on by some mediocre performances and low fan turnout. But after years of hard work by players like Mario Lemieux, Evgeni Malkin, Marc-Andre Fleury, Jordan Staal, and Sidney Crosby the Penguins finally earned their home. On June 8, 2007 a $325 million bond was issued to the Penguins with a 30 year lease for the building of CONSOL Energy Arena. The Arena includes a glass atrium overlooking downtown Pittsburgh and rooftop sky lights. The arena hosted it's first game on September 22, 2010.";
+}
+</script>
+</head>
+<body onload="var begin=setInterval('changeRoster()',10000)">
+<div class="wrapper">
+<table>
+
+	<tr>
+		<th colspan="3" class="title" id="#home"><img src="penguin1.jpg" alt="logo" width="150" height="112" />
+		Pittsburgh Penguins Hockey
+		<img src="penguin2.jpg" alt="logo" width="150" height="112" /></th>
+	</tr>
+
+	<tr>
+		
+		<td class="links"><a href="home.html"><img src="linkhome.jpg" alt="home link" height="101" width="160" /></a></td>
+
+<td rowspan="4" class="content">
+		<h1 onmouseover="this.style.textDecoration='underline';this.style.color='CCB776';this.innerHTML='Click Images Below For Information'" 
+		onmouseout="this.style.textDecoration='none';this.style.color='black';this.innerHTML='Great Moments in Pittsburgh Penguins History'">
+		Great Moments in Pittsburgh Penguins History</h1>
+<hr />
+	<p style="center">
+		&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;<img src="penlogo.jpg" alt="Penguins Logo" height="150" width="150" onclick="showfounding(); return false;"/>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;<img src="uniform.jpg" alt="Penguins Uniform" height="150" width="150" onclick="showcolors(); return false;"/>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;<img src="mario.jpg" alt="Mario Lemieux" height="150" width="150" onclick="showmario(); return false;"/>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;<img src="evgeni.jpg" alt="Evgeni Malkin" height="150" width="150" onclick="showevgeni(); return false;"/>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;<img src="consol.jpg" alt="CONSOL Energy Arena" height="150" width="150" onclick="showconsol(); return false;"/>&nbsp;&nbsp;&nbsp;
+	</p>
+	<div id="txtArea">
+	<p id="description"> </p>
+	</div>	
+</td>
+
+
+		<td rowspan="4" class="player"><img src="player1.jpg" alt="player roster" width="250" height="550" /></td>
+		
+	</tr>
+
+	<tr>
+
+		<td class="links"><a href="games.html"><img src="linkgames.jpg" alt="games link" height="101" width="160" /></a></td>
+	</tr>
+	<tr>
+		<td class="links"><a href="kids.html"><img src="linkkids.jpg" alt="kids link" height="101" width="160" /></a></td>
+	</tr>
+	<tr>
+		<td class="links" id="current"><a href="history.html"><img src="linkhistory.jpg" alt="history link" height="101" width="160" /></a></td>
+
+	</tr>
+
+	<tr>
+
+		<td colspan="3" class="credits">|&nbsp;&nbsp;<span style="color:green">e</span>MAD Design&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://penguins.nhl.com/">Official Pittsburgh Penguins Website</a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.nhl.com/">National Hockey League Website</a>&nbsp;|&nbsp;Page created November 25,2013&nbsp;&nbsp;|
+		&nbsp;&nbsp;<a href="emailto:fanclub@pitspenguins.com">Contact Us</a>&nbsp;&nbsp;|
+		</td>
+
+	</tr>
+
+</table>
+
+</div>
+</body>
+</html>
